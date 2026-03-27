@@ -1,23 +1,25 @@
 .px-black {
-    background-color: darkgray;
+    background-color: black;
     margin: 0;
 }
 
-nav{
+nav {
     width: 100%;
     background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 100px;
+    border-bottom: 2px solid #333;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-h1{
+h1 {
     font-size: 24px;
-    color:orange;
+    color: orange;
 }
 
-ul{
+ul {
     display: flex;
     list-style: none;
     margin: 0;
@@ -28,44 +30,43 @@ ul{
     margin-right: auto;
 }
 
-ul li{
+ul li {
     list-style: none;
     padding: 0px 20px;
     position: relative;
 }
 
-ul li:hover > ul{
+ul li:hover>ul {
     display: block;
 }
 
-ul li a{
+ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 16px;
     transition: 0.5s ease;
 }
 
-ul li a:hover{
+ul li a:hover {
     color: orange;
     text-decoration: underline;
     text-underline-offset: 8px;
     text-decoration-thickness: 2px;
 }
 
-ul li ul{
+ul li ul {
     display: none;
     position: absolute;
     top: calc(100% + 10px);
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #000000; 
+    left: 0;
+    background-color: #000000;
     border: 2px solid #333;
     border-radius: 5px;
     min-width: 140px;
     padding: 10px 0;
     margin: 0;
     z-index: 10;
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 ul li ul::before {
@@ -77,13 +78,14 @@ ul li ul::before {
     height: 12px;
 }
 
-ul li ul li{
+ul li ul li {
     padding: 5px 0;
     width: 100%;
-    text-align: center;
+    text-align: left;
+    padding-left: 15px;
 }
 
-.pxButton{
+.pxButton {
     font-size: 16px;
     text-decoration: none;
     padding: 8px 15px;
@@ -94,7 +96,30 @@ ul li ul li{
     transition: 0.3s;
 }
 
-.pxButton:hover{
+.pxButton:hover {
     color: black;
     transition: 0.3s;
+}
+
+.pxSubHead {
+    background-color: black;
+    /*border-top: 1px solid #333;*/
+}
+
+.pxSubHeadH2 {
+    margin-left: 80px;
+    background-color: black;
+    color: white;
+    font-style: italic;
+    margin-top: 0px;
+    top: 20px;
+}
+
+.pxSubHeadH6 {
+    margin-left: 80px;
+    background-color: black;
+    color: orange;
+    margin-top: 0;
+    top: 0;
+    padding: 0;
 }
