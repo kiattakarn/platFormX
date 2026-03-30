@@ -123,3 +123,102 @@ ul li ul li {
     top: 0;
     padding: 0;
 }
+
+.container{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    background-color: black;
+
+}
+
+.product {
+    flex: 1 1 calc(25% - 20px); /* กำหนดให้กว้างประมาณ 1 ใน 4 */
+    min-width: 300px;      /* ขนาดเล็กที่สุดที่ยอมได้ก่อนจะตัดบรรทัด */
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 4px solid transparent; /* เตรียมที่ไว้สำหรับเส้นสีด้านซ้าย */
+    color: #fff;
+    transition: 0.3s;
+    /*text-align: center;*/
+}
+
+/* สีขอบด้านซ้ายตามรูป */
+.border-orange { border-left-color: orange; }
+.border-blue { border-left-color: #5dade2; }
+.border-yellow { border-left-color: #f1c40f; }
+.border-white { border-left-color: white;}
+
+/* จัดการเนื้อหาภายในการ์ด */
+.product h3 {
+    margin: 20px 0 10px;
+    font-size: 1.25rem;
+}
+
+.product p {
+    color: #888;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.view-details {
+    color: orange; /* หรือสีตามที่กำหนด */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+/* Hover Effect */
+.product:hover {
+    transform: translateY(-5px);
+    background-color: #252525;
+}
+
+.pxFlashLight {
+    margin-top: 50px;
+    margin-left: 150px;
+    color: orange;
+    font-size: 10px;
+}
+
+.pxUnderFlash {
+    top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 70px;
+    /*margin: 0px;*/
+    padding:0px;
+    font-family: Arial, Helvetica, sans-serif; 
+    color: red;
+    font-size: 60px; 
+    line-height: 1.0;
+}
+
+.pxMiddleUnderFlash{
+    /*top: 20px;*/
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 คอลัมน์ */
+    gap: 50px;
+    background-color: black;
+    color: darkorange;
+}
+
+.pxMiddleUnderFlashLeft{
+    padding: 50px;
+    margin-left: 100px;
+}
+
+.pxBottomUnderFlash{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
