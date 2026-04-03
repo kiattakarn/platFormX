@@ -222,3 +222,29 @@ ul li ul li {
     display: flex;
     justify-content: center;
 }
+
+.pxContainerAddress{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.pxAddress{
+    width: 80%;
+    padding: 10px;
+    margin-top: 40px;
+    filter: invert(80%);
+}
+
+.pxDetailAddres{
+    font-size: 14px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.pxFooter{
+    color: orange;
+    /*min-height: 100vh;*/
+    font-size: 10px;
+    text-align: center;
+}
