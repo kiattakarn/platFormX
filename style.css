@@ -248,3 +248,20 @@ ul li ul li {
     font-size: 10px;
     text-align: center;
 }
+
+.px1-2Column{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    background-color: black;
+    color: darkorange;
+}
+
+.px1Left{
+    padding: 10px;
+    margin-left: 100px;
+    color: white;
+}
+
+.px2Right{
+}
